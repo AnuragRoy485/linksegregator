@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Link Segregator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Social Media Link Segregator</h1>
+    </header>
+    <main>
+      <input type="file" id="fileInput" accept=".xlsx, .docx" />
+      <button id="processBtn">Process File</button>
+      <button id="uploadNewFileBtn" style="display: none;">Upload New File</button>
+      <div id="output"></div>
+      <div id="buttons" style="display: none;">
+        <button id="downloadExcelBtn">Download Excel</button>
+        <button id="downloadPdfBtn">Download PDF</button>
+      </div>
+    </main>
+    <footer>
+      <p>Tool Developed By Anurag Roy. </p>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.27/jspdf.plugin.autotable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
